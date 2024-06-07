@@ -2,6 +2,7 @@
   if (settings.prevent_right_click) {
     document.addEventListener('contextmenu', function(e) {
       e.preventDefault(); // ยกเลิกการกระทำเรื่องคลิกขวา
+      alert(settings.alert_message);
     });
   }
 </script>
