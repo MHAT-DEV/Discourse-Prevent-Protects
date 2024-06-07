@@ -1,0 +1,11 @@
+prevent_text_selection:
+  default: true
+  client: true
+  type: bool
+  description: "Enable to prevent text selection"
+
+prevent_right_click:
+  default: true
+  client: true
+  type: bool
+  description: "Enable to prevent right-click actions"
