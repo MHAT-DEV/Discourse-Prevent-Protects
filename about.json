@@ -1,10 +1,21 @@
 {
-  "name": "Discourse Prevent Protects",
+  "name": "Discourse Provent Protects",
   "about": "A theme component to prevent text selection and right-click actions.",
-  "version": "0.1",
-  "author": "MHAT",
-  "theme_version": "2.7.0",
-  "components": {
+  "component": true,
+  "license_url": null,
+  "about_url": null,
+  "authors": "MHAT",
+  "theme_version": null,
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {
+  },
+  "color_schemes": {
+  },
+  "modifiers": {
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966",
+    "components": {
     "prevent-text-selection": "Prevent Text Selection",
     "prevent-right-click": "Prevent Right Click"
   }
