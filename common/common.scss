@@ -1,0 +1,12 @@
+@if $prevent_text_selection {
+  body * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  button, .menu-item {
+    pointer-events: auto !important;
+  }
+}
