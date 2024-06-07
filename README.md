@@ -8,10 +8,6 @@ To install this theme component, follow these steps:
 
 1. Clone the repository to your local machine:
 
-bash
-
-คัดลอกโค้ด
-
 ```
 git clone https://github.com/your-username/discourse-provent-protects.git
 ```
