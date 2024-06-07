@@ -12,25 +12,27 @@ To install this theme component, follow these steps:
 git clone https://github.com/MHAT-DEV/discourse-provent-protects.git
 ```
 
+
 2. Upload the theme component to your Discourse instance:
-  * Navigate to **Admin > Customize > Themes**.
-  * Click on **Install**.
-  * Select **From your device**, and choose the ZIP file containing the theme component.
+- Navigate to **Admin > Customize > Themes**.
+- Click on **Install**.
+- Select **From your device**, and choose the ZIP file containing the theme component.
+
 3. Enable and configure the theme component:
-  * After installation, enable the theme component by clicking on **Add to active themes**.
-  * Customize the behavior by adjusting settings in **Admin > Customize > Themes > Discourse Provent Protects**.
+- After installation, enable the theme component by clicking on **Add to active themes**.
+- Customize the behavior by adjusting settings in **Admin > Customize > Themes > Discourse Provent Protects**.
 
 ## Features
 
-* Prevents text selection across all forum pages.
-* Disables right-click actions to protect content.
+- Prevents text selection across all forum pages.
+- Disables right-click actions to protect content.
 
 ## Settings
 
 The following settings can be configured via the Discourse admin panel:
 
-* **Prevent Text Selection:** Enable to prevent users from selecting text.
-* **Prevent Right Click:** Enable to disable right-click actions.
+- **Prevent Text Selection:** Enable to prevent users from selecting text.
+- **Prevent Right Click:** Enable to disable right-click actions.
 
 ## Contributing
 
@@ -38,7 +40,7 @@ Found a bug or want to suggest a feature? Contributions are welcome! Please open
 
 ## License
 
-This theme component is licensed under the [MIT License](LICENSE).
+This theme component is licensed under the MIT License.
 
 ## Learn More
 
