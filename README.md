@@ -9,7 +9,7 @@ To install this theme component, follow these steps:
 1. Clone the repository to your local machine:
 
 ```
-git clone https://github.com/your-username/discourse-provent-protects.git
+git clone https://github.com/MHAT-DEV/discourse-provent-protects.git
 ```
 
 2. Upload the theme component to your Discourse instance:
