@@ -10,26 +10,3 @@
     pointer-events: auto !important;
   }
 }
-
-.tooltiptext {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  z-index: 9999;
-  display: none; /* ซ่อน tooltips เริ่มต้น */
-}
-
-/* ปรับขนาดของ tooltips ตามข้อความ */
-.tooltiptext::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent rgba(0, 0, 0, 0.7) transparent transparent;
-  transform: translateY(-50%);
-}
