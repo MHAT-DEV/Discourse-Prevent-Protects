@@ -2,7 +2,15 @@
   if (settings.prevent_right_click) {
     document.addEventListener('contextmenu', function(e) {
       e.preventDefault(); // ยกเลิกการกระทำเรื่องคลิกขวา
-      alert(settings.alert_message);
+      var tooltip = document.createElement("div");
+      tooltip.className = "tooltiptext";
+      tooltip.innerHTML = settings.alert_message;
+      document.body.appendChild(tooltip);
+      tooltip.style.top = e.clientY + "px";
+      tooltip.style.left = e.clientX + "px";
+      setTimeout(function() {
+        tooltip.parentNode.removeChild(tooltip);
+      }, 2000); // ปิด tooltips ในระยะเวลาหลังจากแสดงเป็นเวลา 2 วินาที (2000 milliseconds)
     });
   }
 </script>
