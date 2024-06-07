@@ -1,0 +1,11 @@
+{
+  "name": "Discourse Prevent Protects",
+  "about": "A theme component to prevent text selection and right-click actions.",
+  "version": "0.1",
+  "author": "MHAT",
+  "theme_version": "2.7.0",
+  "components": {
+    "prevent-text-selection": "Prevent Text Selection",
+    "prevent-right-click": "Prevent Right Click"
+  }
+}
