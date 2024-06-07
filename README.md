@@ -4,7 +4,9 @@ Discourse Provent Protects is a theme component designed to prevent text selecti
 
 ## Installation
 
-To install this theme component, follow these steps:
+For detailed instructions, see [How do I install a Theme or Theme Component?](https://meta.discourse.org/t/install-a-theme-or-theme-component/63682).
+
+Or manual install this theme component, follow these steps:
 
 1. Clone the repository to your local machine:
 
