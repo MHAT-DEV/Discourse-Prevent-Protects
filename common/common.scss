@@ -11,47 +11,29 @@
   }
 }
 /* CSS for tooltips */
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
+.tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: auto;
   background-color: #555;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 5px;
   position: absolute;
-  z-index: 1;
-  top: -5px;
-  right: 105%;
+  z-index: 1000;
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}/* CSS for tooltips */
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
+.tooltiptext:before {
+  content: '';
   position: absolute;
-  z-index: 1;
-  top: -5px;
-  right: 105%;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltiptext.show {
   visibility: visible;
 }
