@@ -9,22 +9,7 @@
       } else {
         // ตรวจสอบว่าการป้องกันการเลือกข้อความถูกเปิดหรือไม่
         if (settings.prevent_text_selection) {
-          // สร้าง element สำหรับ tooltips
-          var tooltip = document.createElement("div");
-          tooltip.className = "tooltiptext";
-          tooltip.innerHTML = settings.alert_message;
-
-          // กำหนดตำแหน่งของ tooltips ด้านข้างของเคอร์เซอร์
-          tooltip.style.top = e.clientY + "px";
-          tooltip.style.left = e.clientX + 20 + "px"; // 20 คือระยะห่างจากเคอร์เซอร์
-
-          // เพิ่ม tooltips เข้าไปใน DOM
-          document.body.appendChild(tooltip);
-
-          // ตั้งเวลาให้ tooltips หายไปหลังจาก 2 วินาที
-          setTimeout(function() {
-            tooltip.parentNode.removeChild(tooltip);
-          }, 2000);
+          
         }
       }
     });
