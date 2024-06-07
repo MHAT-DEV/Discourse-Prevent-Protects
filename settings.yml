@@ -9,3 +9,15 @@ prevent_right_click:
   client: true
   type: bool
   description: "Enable to prevent right-click actions"
+  
+alert_message:
+  default: "คำเตือน: การคลิกขวาถูกปิดใช้งานในเว็บไซต์นี้"
+  client: true
+  type: string
+  description: "Alert message shown when right-click is disabled"
+
+alert_enabled:
+  default: true
+  client: true
+  type: bool
+  description: "Enable or disable the alert message"
