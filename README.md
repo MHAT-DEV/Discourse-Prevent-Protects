@@ -26,6 +26,7 @@ git clone https://github.com/MHAT-DEV/discourse-provent-protects.git
 
 - Prevents text selection across all forum pages.
 - Disables right-click actions to protect content.
+- Alertbox for Right-Click
 
 ## Settings
 
