@@ -1,0 +1,7 @@
+<script type="text/discourse-plugin" version="0.8">
+  if (settings.prevent_right_click) {
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault(); // ยกเลิกการกระทำเรื่องคลิกขวา
+    });
+  }
+</script>
