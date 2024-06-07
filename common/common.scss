@@ -10,6 +10,7 @@
     pointer-events: auto !important;
   }
 }
+
 .tooltiptext {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
@@ -18,8 +19,7 @@
   border-radius: 5px;
   font-size: 14px;
   z-index: 9999;
-  pointer-events: none; /* ป้องกันการบังคับและการปิดตัว tooltips เมื่อคลิก */
-  white-space: nowrap; /* ข้อความจะไม่ขึ้นบรรทัดใหม่ */
+  display: none; /* ซ่อน tooltips เริ่มต้น */
 }
 
 /* ปรับขนาดของ tooltips ตามข้อความ */
