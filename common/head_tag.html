@@ -2,15 +2,23 @@
   if (settings.prevent_right_click) {
     document.addEventListener('contextmenu', function(e) {
       e.preventDefault(); // ยกเลิกการกระทำเรื่องคลิกขวา
+
+      // สร้าง element สำหรับ tooltips
       var tooltip = document.createElement("div");
       tooltip.className = "tooltiptext";
       tooltip.innerHTML = settings.alert_message;
-      document.body.appendChild(tooltip);
+
+      // กำหนดตำแหน่งของ tooltips ด้านข้างของเคอร์เซอร์
       tooltip.style.top = e.clientY + "px";
-      tooltip.style.left = e.clientX + "px";
+      tooltip.style.left = e.clientX + 20 + "px"; // 20 คือระยะห่างจากเคอร์เซอร์
+
+      // เพิ่ม tooltips เข้าไปใน DOM
+      document.body.appendChild(tooltip);
+
+      // ตั้งเวลาให้ tooltips หายไปหลังจาก 2 วินาที
       setTimeout(function() {
         tooltip.parentNode.removeChild(tooltip);
-      }, 2000); // ปิด tooltips ในระยะเวลาหลังจากแสดงเป็นเวลา 2 วินาที (2000 milliseconds)
+      }, 2000);
     });
   }
 </script>
