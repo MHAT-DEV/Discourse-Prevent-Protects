@@ -21,12 +21,3 @@ alert_message:
   client: true
   type: string
   description: "Alert message shown when right-click is disabled"
-
-  copyright_notice_text:
-    default: "คำเตือน: หัวข้อนี้มีเนื้อหาที่อาจมีลิขสิทธิ์ กรุณาอย่าทำการคัดลอกหรือเผยแพร่โดยไม่ได้รับอนุญาต"
-    client: true
-    type: text
-  copyright_notice_category_id:
-    default: 1  # แทนที่ด้วย ID ของหมวดหมู่ที่ต้องการ
-    client: true
-    type: integer
