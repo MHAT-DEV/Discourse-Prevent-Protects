@@ -10,3 +10,18 @@
     pointer-events: auto !important;
   }
 }
+#copyright-notice {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#countdown-timer {
+    font-size: 0.8em;
+    margin-left: 10px;
+}
