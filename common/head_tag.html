@@ -14,9 +14,11 @@
       }
     });
   }
+</script>
+<script type="text/discourse-plugin" version="0.8">
     api.onPageChange((url, title) => {
-        const noticeText = settings.custom_settings_copyright_notice_text;
-        const noticeCategoryId = settings.custom_settings_copyright_notice_category_id;
+        const noticeText = settings.copyright_notice_text;
+        const noticeCategoryId = settings.copyright_notice_category_id;
 
         if (api.getCurrentCategoryId() === noticeCategoryId) {
             if (!document.querySelector('#copyright-notice')) {
