@@ -14,4 +14,46 @@
       }
     });
   }
+    api.onPageChange((url, title) => {
+        const noticeText = settings.custom_settings_copyright_notice_text;
+        const noticeCategoryId = settings.custom_settings_copyright_notice_category_id;
+
+        if (api.getCurrentCategoryId() === noticeCategoryId) {
+            if (!document.querySelector('#copyright-notice')) {
+                const noticeBar = document.createElement('div');
+                noticeBar.id = 'copyright-notice';
+                noticeBar.innerHTML = `<span>${noticeText}</span> <span id="countdown-timer"></span>`;
+                noticeBar.style.cssText = `
+                    background-color: #ffcc00;
+                    color: #000;
+                    padding: 10px;
+                    text-align: center;
+                    font-weight: bold;
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                    z-index: 1000;
+                `;
+                document.body.prepend(noticeBar);
+
+                let timer = 10;
+                const countdownTimer = document.getElementById('countdown-timer');
+                countdownTimer.innerText = ` (${timer})`;
+
+                const countdownInterval = setInterval(() => {
+                    timer -= 1;
+                    countdownTimer.innerText = ` (${timer})`;
+                    if (timer <= 0) {
+                        clearInterval(countdownInterval);
+                        noticeBar.remove();
+                    }
+                }, 1000);
+            }
+        } else {
+            const noticeBar = document.querySelector('#copyright-notice');
+            if (noticeBar) {
+                noticeBar.remove();
+            }
+        }
+    });
 </script>
